@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAE 3.01 · Attendus en gestion de projet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="eyebrow">BUT MMI · SAE 3.01</div>
+    <h1>Attendus en gestion de projet</h1>
+    <p class="lede">Mémo de référence reprenant les consignes. Il suit le déroulé du projet&nbsp;: du découpage en Epics et User Stories avant la réalisation jusqu’à la rétrospective finale.</p>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="Sommaire">
+    <p>Sommaire</p>
+    <ol>
+      <li><a href="#epics-us"><span>01</span>Epics, US et tâches</a></li>
+      <li><a href="#suivi"><span>02</span>Suivi des avancées</a></li>
+      <li><a href="#rdv"><span>03</span>Rendez-vous d’avancement</a></li>
+      <li><a href="#retro"><span>04</span>Rétrospective</a></li>
+      <li><a href="#livrables"><span>✓</span>Récapitulatif des livrables</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <!-- 01 -->
+    <section id="epics-us">
+      <div class="sec-head">
+        <div class="sec-num">01</div>
+        <h2>Création des Epics, US et tâches</h2>
+        <p class="when">Avant de commencer la réalisation</p>
+      </div>
+
+      <div class="block">
+        <h3>Lister et regrouper</h3>
+        <ul class="list">
+          <li>Dressez la liste des <strong>User Stories (US)</strong>&nbsp;: ce sont les objectifs.</li>
+          <li>Regroupez-les par <strong>Epic</strong>&nbsp;: ce sont les thématiques.</li>
+        </ul>
+      </div>
+
+      <div class="callout warn">
+        <span class="tag">Attention</span>
+        <p>Listez <strong>tout ce qui a été prévu avec Franck Labille</strong>, même si vous ne ferez sans doute pas tout.</p>
+      </div>
+
+      <div class="block">
+        <h3>Contenu attendu de chaque élément</h3>
+        <div class="anatomy">
+          <article class="card">
+            <div class="card-title"><h3>Epic</h3><span class="kind">thématique</span></div>
+            <dl class="fields">
+              <div><dt>1</dt><dd>Un numéro <small class="mono">E1, E2, …</small></dd></div>
+              <div><dt>2</dt><dd>Un nom</dd></div>
+              <div><dt>3</dt><dd>Une phrase qui la résume</dd></div>
+            </dl>
+          </article>
+          <article class="card">
+            <div class="card-title"><h3>User Story</h3><span class="kind">objectif</span></div>
+            <dl class="fields">
+              <div><dt>1</dt><dd>Un numéro <small class="mono">US1.1, US3.7, …</small></dd></div>
+              <div><dt>2</dt><dd>Un nom</dd></div>
+              <div><dt>3</dt><dd>Une accroche <span class="opt">(si applicable)</span></dd></div>
+              <div><dt>4</dt><dd>Une description détaillée <small>issue du travail réalisé avec Franck Labille</small></dd></div>
+            </dl>
+          </article>
+        </div>
+        <p class="lede note-small">Dans le numéro d’une US, le premier chiffre renvoie à son Epic&nbsp;: <span class="mono">US3.7</span> est la 7<sup>e</sup> US de l’Epic <span class="mono">E3</span>.</p>
+      </div>
+
+      <div class="block">
+        <h3>Compiler dans un document PDF</h3>
+        <ul class="list">
+          <li>L’ensemble (Epics et US) est compilé dans un <strong>document PDF</strong>.</li>
+          <li>Le document est à déposer sur <strong>Moodle</strong>.</li>
+        </ul>
+        <div class="callout info">
+          <span class="tag">Engagement</span>
+          <p>Le contenu de ce document est un <strong>engagement auprès du client</strong>, à respecter par la suite.</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3>Mettre en place le Kanban</h3>
+        <ul class="list">
+          <li>Utilisez le <strong>nouveau Kanban créé par l’enseignant</strong> pour votre équipe.</li>
+          <li>Créez <strong>toutes les Epics</strong>.</li>
+          <li>Créez <strong>toutes les US</strong>, en y recopiant leurs descriptions, avec l’Epic correspondante en <strong>tâche parente</strong>.</li>
+        </ul>
+        <div class="tree" aria-label="Organisation des tickets dans le Kanban">
+          <div class="row"><span class="pill epic">E1</span><span>Epic <span class="note">· créée avant la réalisation</span></span></div>
+          <div class="row l2"><span class="pill us">US1.1</span><span>User Story, Epic E1 en parent <span class="note">· description recopiée</span></span></div>
+          <div class="row l3"><span class="pill task">tâche</span><span class="note">Sous-tâches créées au démarrage du travail (voir étape 02)</span></div>
+          <div class="row l3"><span class="pill task">tâche</span><span class="note">2 minimum par US</span></div>
+          <div class="row l2"><span class="pill us">US1.2</span><span>User Story, Epic E1 en parent</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section id="suivi">
+      <div class="sec-head">
+        <div class="sec-num">02</div>
+        <h2>Suivi des avancées</h2>
+        <p class="when">Pendant la réalisation</p>
+      </div>
+
+      <div class="flow">
+        <div class="step">
+          <span class="when-label">Au démarrage</span>
+          <h3>Quand un membre démarre un travail</h3>
+          <ul class="list">
+            <li>Il s’affecte l’US.</li>
+            <li>Il découpe l’US en sous-tâches&nbsp;: <strong>2 minimum</strong>.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <span class="when-label">En cours</span>
+          <h3>Au fil du travail</h3>
+          <ul class="list">
+            <li>Déplacez les tickets dans le Kanban.</li>
+            <li>Faites un <strong>suivi détaillé du temps passé</strong>.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <span class="when-label">À la fin</span>
+          <h3>Une fois le travail terminé</h3>
+          <ul class="list">
+            <li>Toutes les sous-tâches sont terminées.</li>
+            <li>L’US est <strong>terminée, mais pas validée</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <span class="tag">À retenir</span>
+        <p>Seul le rendez-vous d’avancement permet de faire passer une US de «&nbsp;terminée&nbsp;» à «&nbsp;validée&nbsp;».</p>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section id="rdv">
+      <div class="sec-head">
+        <div class="sec-num">03</div>
+        <h2>Rendez-vous d’avancement</h2>
+        <p class="when">À chaque rendez-vous</p>
+      </div>
+
+      <div class="block">
+        <h3>Déroulé</h3>
+        <ul class="list">
+          <li>Présentation des <strong>US terminées</strong>.</li>
+          <li>Passage à <strong>validées</strong> si tout est OK.</li>
+          <li>Création de <strong>bugs</strong> s’il faut retravailler certains aspects.</li>
+          <li>Présentation d’un <strong>rapport ou d’un graphique</strong> indiquant le <strong>nombre d’heures passées par membre</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="states" aria-label="Issue d’une US présentée en rendez-vous">
+        <span class="s done">US terminée</span>
+        <span class="arrow" aria-hidden="true">→</span>
+        <span class="s">présentée en RDV</span>
+        <span class="arrow" aria-hidden="true">→</span>
+        <span class="s valid">validée si OK</span>
+        <span class="arrow" aria-hidden="true">ou</span>
+        <span class="s bug">bug(s) créé(s) à retravailler</span>
+      </div>
+
+      <div class="callout info">
+        <span class="tag">Livrable</span>
+        <p>Un <strong>compte rendu en PDF</strong> est déposé sur Moodle après chaque rendez-vous.</p>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section id="retro">
+      <div class="sec-head">
+        <div class="sec-num">04</div>
+        <h2>Rétrospective</h2>
+        <p class="when">Une fois le projet terminé</p>
+      </div>
+
+      <div class="block">
+        <h3>Identifiez en équipe</h3>
+        <div class="anatomy">
+          <div class="card"><div class="card-title"><h3>Ce qui a bien fonctionné</h3></div></div>
+          <div class="card"><div class="card-title"><h3>Ce qui devrait être amélioré</h3></div></div>
+          <div class="card"><div class="card-title"><h3>Ce qu’il faudrait éviter de reproduire</h3></div></div>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <span class="tag">Livrable</span>
+        <p>La rétrospective est restituée sous la forme d’un <strong>PDF</strong> déposé sur Moodle.</p>
+      </div>
+    </section>
+
+    <!-- Récap -->
+    <section id="livrables">
+      <div class="sec-head">
+        <div class="sec-num">✓</div>
+        <h2>Récapitulatif des livrables</h2>
+        <p class="when">Tous à déposer sur Moodle</p>
+      </div>
+
+      <div class="deliverables">
+        <div class="deliv">
+          <div class="ico">PDF</div>
+          <div><strong>Liste des Epics et des US</strong><span class="sub">Avant la réalisation · engagement auprès du client</span></div>
+          <a class="goto" href="#epics-us">Étape 01</a>
+        </div>
+        <div class="deliv">
+          <div class="ico">PDF</div>
+          <div><strong>Compte rendu de rendez-vous d’avancement</strong><span class="sub">Après chaque rendez-vous</span></div>
+          <a class="goto" href="#rdv">Étape 03</a>
+        </div>
+        <div class="deliv">
+          <div class="ico">PDF</div>
+          <div><strong>Rétrospective</strong><span class="sub">Une fois le projet terminé</span></div>
+          <a class="goto" href="#retro">Étape 04</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3>À tenir à jour en continu dans le Kanban</h3>
+        <ul class="list">
+          <li>Toutes les Epics et toutes les US, avec leurs descriptions.</li>
+          <li>L’affectation des US et leurs sous-tâches (2 minimum).</li>
+          <li>La position des tickets et le temps passé, en détail.</li>
+          <li>Les bugs créés lors des rendez-vous d’avancement.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>SAE 3.01 · BUT MMI · Attendus en gestion de projet</footer>
+
+</body>
+</html>
